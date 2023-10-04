@@ -1,0 +1,250 @@
+<!-- SHIVANSH THATAI -->
+<!-- 301315023 -->
+<!-- Oct 3, 2023 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8eef09224a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="images/logo.png" type="image/x-icon"/>
+    <title>Shivansh Thatai</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,100;1,400;1,600&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: rgb(111, 146, 146);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+
+h1 span {
+  font-style: italic;
+}
+
+h1 span:hover {
+  color: purple;
+  opacity: 0.8;
+  transition: color 0.3s ease;
+}
+
+.top {
+  padding: 50px;
+  min-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topleft,
+.topright {
+  display: flex;
+}
+.topleft img{
+  width: 100px;
+  height: 100px;
+
+}
+.topright {
+  width: 40vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topright a {
+  text-decoration: none;
+  color: cornsilk;
+}
+
+.topright a:hover {
+  color: purple;
+  opacity: 0.8;
+  transition: color 0.3s ease;
+}
+
+.carddiv {
+  color: rgb(18, 17, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  flex-direction: column;
+}
+.carddiv h1{
+  color: cornsilk;
+  font-size: 40px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "pl1 pl2 pl3";
+  justify-content: center;
+  align-items: center;
+  grid-gap: 3rem;
+  margin-bottom: 50px;
+}
+
+.pl1 {
+  grid-area: pl1;
+}
+
+.pl2 {
+  grid-area: pl2;
+}
+.pl3 {
+  grid-area: pl3;
+}
+
+.pl1,
+.pl2,
+.pl3 {
+  width: 27vw;
+  height: fit-content;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.358);
+  border-radius: 8px;
+ 
+}
+
+.grid img {
+  border-radius: 5px;
+  width: 100%;
+  height: 30vh;
+  transition: all 0.4s;
+}
+.grid img:hover{
+height: 30vw;
+width: 30vw;
+}
+
+.grid a {
+  text-decoration: none;
+  color: rgb(93, 93, 72);
+}
+.grid a:hover{
+  color: purple;
+  opacity: 0.8;
+  transition: color 0.3s ease;
+}
+hr {
+  background: #000;
+  border: none;
+  color: #1a1a1a;
+  height: 0.5px;
+  margin: auto;
+  text-align: center;
+  width: 90vw;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 70px;
+  padding: 30px 40px;
+}
+.footer p{
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.social-media {
+  display: flex;
+}
+.social-media img {
+  height: 3vw;
+  filter: brightness(0);
+  padding: 5px 3px;
+}
+.social-media img:hover {
+  filter: brightness(1);
+}
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <div class="topleft">
+        <img src="images/logo.png" alt="Logo">
+      </div>
+      <div class="topright">
+        <b><a href="/">Home</a></b>
+        <b><a href="/about">About</a></b>
+        <b><a href="/services">Services</a></b>
+        <b><a href="/projects">Projects</a></b>
+        <b><a href="/contacts">Contact</a></b>
+      </div>
+    </div>
+    <div class="carddiv">
+      <div style="text-align: center">
+        <h1>Projects</h1>
+      </div>
+
+      <div class="grid">
+        <!-- pl1 -->
+          <div class="pl1">
+            <img src="images/pl1.webp" alt="" />
+            <br />
+            <br />
+            <h3>Online Mealkit website:</h3>
+            <p></p>
+            <p>
+               Very good for people who love cooking but donot want hassle to collect the ingredients
+            </p>
+            <br />
+            <a href="https://letskookup.com/">letskookup</a>
+          </div>
+
+<!-- pl2 -->
+          <div class="pl2">
+            <img src="images/pl2.png" alt="" />
+            <br /><br />
+            <h3>Villa rent website:</h3>
+           
+            <p>
+                 Designed a website for a hospitality group that provides villas for rent, 
+            </p>
+            <br />
+            <a href="https://villabyshivansh.netlify.app/">villabyshivansh</a>
+          </div>
+<!-- pl3 -->
+          <div class="pl3">
+            <img src="images/pl3.jpeg" alt="" />
+            <br /><br />
+            Gym Website:
+            <p>
+                Developed a online website for my gym to attractmore customers, 
+            </p>
+            <br />
+            <a href="https://demo.templatemonster.com/demo/55451.html?aff=dazzlersoft">Body-Building</a>
+          </div>
+      </div>
+    </div>
+    <hr>
+    <div class="footer">
+      <div>
+      <p>&copy; SHIVANSH THATAI</p></div>
+      <div class="social-media">
+        <a href="https://www.instagram.com/valorous_soul/?hl=en" target="blank"
+          ><img src="./images/instagram.png" alt=""
+        /></a>
+        <a href="https://ca.linkedin.com/in/shivansh-thatai-0a103a242" target="blank"
+          ><img src="./images/linkedin.png" alt=""
+        /></a>
+      </div>
+
+    </div>
+  </body>
+</html>

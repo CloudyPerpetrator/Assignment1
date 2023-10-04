@@ -1,0 +1,341 @@
+<!-- SHIVANSH THATAI -->
+<!-- 301315023 -->
+<!-- Oct 3, 2023 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <link rel="icon" href="images/logo.png" type="image/x-icon"/>
+    <title>Shivansh Thatai</title>
+    <script>
+      function resetForm() {
+        document.getElementById("contactForm").reset();
+      }
+    </script>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,100;1,400;1,600&display=swap");
+
+* {
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: fit-content;
+  padding-bottom: 50px;
+  min-width: 100vw;
+  background: rgb(111, 146, 146);
+  background-image: url(https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  /* background-image: url("gradient.jpg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: cornsilk;
+}
+
+h1 {
+  color: black;
+}
+
+h1 span {
+  font-style: italic;
+}
+
+h1 span:hover {
+  color: purple;
+  opacity: 0.8;
+  transition: color 0.3s ease;
+}
+
+.top {
+  padding: 50px;
+  min-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topleft,
+.topright {
+  display: flex;
+}
+.topleft img{
+  width: 100px;
+  height: 100px;
+
+}
+.topright {
+  width: 40vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topright a {
+  text-decoration: none;
+  color: cornsilk;
+}
+
+.topright a:hover {
+  color: purple;
+  opacity: 0.8;
+
+}
+
+.carddiv h1 {
+  color: cornsilk;
+  text-align: center;
+}
+
+.carddiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  background-color: rgb(174 155 155 / 30%);
+  padding: 70px;
+  color: cornsilk;
+  height: fit-content;
+  width: 70vw;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: black;
+  text-align: center;
+}
+
+.card p {
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  column-gap: 5rem;
+  row-gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flexinside {
+  border: 2px solid cornsilk;
+  border-radius: 8px;
+  display: flex;
+  column-gap: 5rem;
+  row-gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+
+}
+
+.flexinside input,
+select {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.verticalflex {
+  display: flex;
+  align-items: center;
+}
+
+.verticalflex input {
+  color: black;
+}
+
+textarea {
+  background-color: rgba(255, 255, 255);
+  padding: 10px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.submit {
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.submit input {
+  background-color: rgba(255, 255, 255);
+  color: black;
+  border: 1px solid rgba(255, 255, 255);
+  font-weight: 800;
+  padding: 10px 30px;
+  border-radius: 30px;
+
+
+}
+hr {
+  background: #000;
+  border: none;
+  color: #1a1a1a;
+  height: 0.5px;
+  margin: auto;
+  text-align: center;
+  width: 90vw;
+}
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 30px 70px;
+  padding: 30px 40px;
+}
+.footer p{
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.social-media {
+  display: flex;
+}
+.social-media img {
+  height: 3vw;
+  filter: brightness(0);
+  padding: 5px 3px;
+}
+.social-media img:hover {
+  filter: brightness(1);
+}
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <div class="topleft">
+        <img src="images/logo.png" alt="Logo">
+      </div>
+      <div class="topright">
+        <b><a href="/">Home</a></b>
+        <b><a href="/about">About</a></b>
+        <b><a href="/services">Services</a></b>
+        <b><a href="/projects">Projects</a></b>
+        <b><a href="/contacts">Contact</a></b>
+      </div>
+    </div>
+    <div class="carddiv">
+      <h1>Contact Us</h1>
+      <br /><br />
+      <div class="card">
+        <div>
+          <h2>Contact Form</h2>
+          <p style="font-weight: normal">
+           
+          </p>
+        </div>
+        <br />
+        <br />
+
+        <form class="flex" id="contactForm" action="/" method="POST">
+    
+          <fieldset class="flexinside">
+            <legend style="color: black"></legend>
+            <div>
+              <label for="fname">First name:</label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+               
+              />
+            </div>
+            <div>
+              <label for="lname">Last name:</label>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+              
+              />
+            </div>
+            <div>
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+             
+              />
+            </div>
+            <div>
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+               
+              />
+            </div>
+          </fieldset>
+
+          <fieldset class="flexinside">
+            <legend style="color: black"></legend>
+            <div>
+              <label for="type">Type Of website</label>
+              <select id="type" name="property">
+              
+              </select>
+            </div>
+           
+           
+            <div class="verticalflex">
+              <label for="price">Price(0.5-10Million): &nbsp; </label>
+              <input type="range" id="price" name="price" min="0" max="10" />
+            </div>
+          </fieldset>
+          <fieldset class="flexinside" style="width: 100%">
+            <legend style="color: black">
+              <b>Additional Comments</b>
+            </legend>
+
+            <div style="width: 100%">
+              <label for="comment">Comments: &nbsp; </label>
+
+              <textarea
+                style="width: 100%"
+                rows="5"
+                name="comment"
+                id="comment"
+              
+              ></textarea>
+            </div>
+          </fieldset>
+          <div class="submit">
+            <input type="submit" value="Submit Form" />
+            <input type="button" value="Reset" onclick="resetForm()" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr>
+    <div class="footer">
+      <div>
+      <p>&copy; SHIVANSH THATAI</p></div>
+      <div class="social-media">
+        <a href="https://www.instagram.com/valorous_soul/?hl=en" target="blank"
+          ><img src="./images/instagram.png" alt=""
+        /></a>
+        <a href="https://ca.linkedin.com/in/shivansh-thatai-0a103a242" target="blank"
+          ><img src="./images/linkedin.png" alt=""
+        /></a>
+      </div>
+
+    </div>
+  </body>
+</html>
